@@ -1,0 +1,11 @@
+name: Sample workflow
+on:
+ push:
+   branches:
+       - main
+jobs:
+  helloWorld:
+    runs_on: ubuntu-latest
+    steps:
+       - name: running a shell command.
+         run: echo "Hello World!!"
